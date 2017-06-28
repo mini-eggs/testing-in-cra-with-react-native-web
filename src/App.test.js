@@ -5,7 +5,7 @@ import { render } from "enzyme";
 import AppDefault from "./app";
 import AppWeb from "./app.web";
 
-test("renders correctly", () => {
+test(".web.js extensions resolve correctly", () => {
   const appDefaultTree = render(<AppDefault />);
   const appWebTree = render(<AppWeb />);
   expect(appDefaultTree.text()).toBe(appWebTree.text());
